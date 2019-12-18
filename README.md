@@ -16,7 +16,27 @@ ECM2419 Coursework
 
 *  To reset all the data, begin from step 1.
 
-# User Requirement Specification
+### Hotel_query tasks:
+Write an SQL file that will do the following queries: <br />
+   A. How many copies of the books from author George Orwell are owned by each library branch? <br />
+   B. How many copies of the book titled The Lost Tribe are available by the branch St Tomas Library? <br />
+   C. Retrieve the names of all borrowers who haven’t borrowed any book since 01-Jan-2017. <br />
+   D. For each book that is loaned out from the St Tomas Library branch and whose due date is today, retrieve the book title, the borrower’s name and the borrower’s email address. <br />
+   E. Which loaned books of Mr. Ian Cooper are overdue? List the book title, borrowed date, due date. How much fine does Mr. Ian Cooper owe in total? <br />
+
+### Hotel_update tasks:
+Write an SQL file that will do the following: <br />
+   A. Mr. Ian Cooper returned one book titled Pride and Prejudice today. <br />
+   B. Mr Ian Cooper borrowed the novel Animal Farm from St Tomas Library today. <br />
+   C. Add a new book, with 2 copies, one stored in St Tomas Library, one stored in Exeter Library. <br />
+   D. As one copy of the book The Lost Tribe in St Tomas Library is damaged, remove its record from the system. <br />
+   E. As Mr. Ian Cooper has paid for his fine, update his fine to 0. <br />
+
+
+## Conceptual Model Design
+![ER diagram](hotel-management-system-er-diagram-1-638.jpg)
+
+
 ## Data Requirements
 ### Hotels
 The database must hold records of the hotels. The hotels are identified by their name and
@@ -95,9 +115,3 @@ payment" or "Cancelled". The invoice references to the customer through their cu
 3 Update invoice status.
 4 Update the reservation. Cancel a booking by deleting the reservationID in AllReservations and setting the invoice status to 'Cancelled'.
 5 Update room availability
-
-
-## Conceptual Model Design
-Entity-Relationship diagram in UML
-
-!(/hotel-management-system-er-diagram-1-638.jpg)
